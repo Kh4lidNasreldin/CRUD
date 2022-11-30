@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <div class="crud">
+      <div class="head">
+        <h1>cruds</h1>
+        <p>product management system</p>
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Title" id="title">
+        <div class="price">
+          <input oninput="getTotal()" type="number" placeholder="Price" id="price">
+          <input oninput="getTotal()" type="number" placeholder="Taxes" id="taxes">
+          <input oninput="getTotal()" type="number" placeholder="Ads" id="ads">
+          <input oninput="getTotal()" type="number" placeholder="Discount" id="discount">
+          <div class="total-box"><p>Total</p> : <span id="total">0</span></div>
+        </div>
+        <input type="number" placeholder="Count" id="count">
+        <input type="text" placeholder="Category" id="category">
+        <button id="submit">create product</button>
+      </div>
+      <div class="outputs">
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>prices</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody">
+            <!-- <tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>1400</td>
+              <td>400</td>
+              <td>1200</td>
+              <td>1200</td>
+              <td>14000</td>
+              <td>phone</td>
+              <td><button class="update">update</button></td>
+              <td><button class="delete">delete</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
